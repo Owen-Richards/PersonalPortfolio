@@ -1,0 +1,196 @@
+.header-container {
+
+  position: relative;
+  height: auto;
+  justify-content: center;
+
+  h1 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+
+
+  }
+}
+
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f7705f;
+    --color-quinary: #f1533f;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #eff8e2;
+  }
+
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .text_shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+
+    10% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    20% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+
+    30% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    40% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+
+    50% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+
+    60% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+
+    70% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    80% {
+      text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+
+    90% {
+      text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    100% {
+      text-shadow: none;
+    }
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+
+    40% {
+      transform: translate(-12px, -12px);
+    }
+
+    50% {
+      transform: translate(-12px, -12px);
+    }
+
+    60% {
+      transform: translate(-12px, -12px);
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+.lineParent {
+  overflow: hidden;
+
+  .lineChildren {
+    transform: translate(0, 500px);
+  }
+}
+
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      } 
+    }
+  }
+}
+
+$min_width: 4000px;
+$max_width: 5000px;
+$min_font: 16px;
+$max_font: 24px;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
