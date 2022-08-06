@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 import About from "./components/About/index";
-import Featured from "./components/Featured/index";
+// import Featured from "./components/Featured/index";
 import Footer from "./components/Footer/index";
 import Gallery from "./components/Gallery/index";
 import Header from "./components/Header/index";
@@ -74,7 +74,7 @@ const App = () => {
           <Header />
           {/* <Featured /> */}
           <About />
-          <Gallery />
+          {/* <Gallery /> */}
           <Footer />
         </div>
       )}

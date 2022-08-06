@@ -77,39 +77,31 @@ const Wave = () => {
 };
 
 export default function Header() {
-  useEffect(() => {
-    const split = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineChildren",
-    });
+  // useEffect(() => {
+  //   const split = new SplitText("#header-text", {
+  //     type: "lines",
+  //     linesClass: "lineChildren",
+  //   });
 
-    const splitParent = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineParent",
-    });
+  //   const splitParent = new SplitText("#header-text", {
+  //     type: "lines",
+  //     linesClass: "lineParent",
+  //   });
 
-    gsap.to(split.lines, {
-      duration: 2,
-      y: 9,
-      opacity: 10,
-      stagger: .5,
-      ease: "power2",
-    });
-  }, []);
+  //   gsap.to(split.lines, {
+  //     duration: 2,
+  //     y: 9,
+  //     opacity: 10,
+  //     stagger: .5,
+  //     ease: "power2",
+  //   });
+  // }, []);
 
   return (
     <section className="header-container" data-scroll-section>
         <Row>
           <Col xs={10} md={7}>
-            <h1 id="header-text">
-              <div className="content">
-                <h2 className="text_shadows">hello,</h2>
-              </div>
-              
-              <div className="content">
-                <h2 className="text_shadows">I'm Owen!</h2>
-              </div>
-            </h1>
+          <p class="line-1 anim-typewriter">Hello, I'm Owen</p>
           </Col>
           <Col xs={8} md={5}>
             <Canvas camera={{ fov: 12, position: [0,0, 2.5] }}>
