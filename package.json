@@ -16,6 +16,7 @@
     "glsl-noise": "^0.0.0",
     "glslify": "^7.1.1",
     "gsap": "^3.6.0",
+    "ityped": "^1.0.3",
     "jquery": "^3.6.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
@@ -28,6 +29,7 @@
     "react-loadable": "^5.5.0",
     "react-scripts": "^5.0.1",
     "three": "^0.142.0",
+    "vanta": "^0.5.22",
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {

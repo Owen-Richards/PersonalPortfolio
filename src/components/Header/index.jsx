@@ -1,116 +1,30 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import SplitText from "../../utils/Split3.min";
-import { Container, Row, Col } from 'react-grid-system';
-import * as THREE from "three";
-import { useRef, Suspense } from "react";
-import { Canvas, extend, useFrame, useLoader } from "@react-three/fiber";
-import { shaderMaterial } from "@react-three/drei";
-import glsl from "babel-plugin-glsl/macro";
 import "./style.scss";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
-const WaveShaderMaterial = shaderMaterial(
-  {
-    uTime: 0,
-    uColor: new THREE.Color(0.0, 0.0, 0.0),
-    uTexture: new THREE.Texture()
-  },
-  // Vertex Shader
-  glsl`
-    precision mediump float;
- 
-    varying vec2 vUv;
-    varying float vWave;
+export default function Intro() {
+  const textRef = useRef();
 
-    uniform float uTime;
-
-    #pragma glslify: snoise3 = require(glsl-noise/simplex/3d.glsl);
-
-    void main() {
-      vUv = uv;
-
-      vec3 pos = position;
-      float noiseFreq = 2.0;
-      float noiseAmp = 0.4;
-      vec3 noisePos = vec3(pos.x * noiseFreq + uTime, pos.y, pos.z);
-      pos.z += snoise3(noisePos) * noiseAmp;
-      vWave = pos.z;
-
-      gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);  
-    }
-  `,
-  // Fragment Shader
-  glsl`
-    precision mediump float;
-
-    uniform vec3 uColor;
-    uniform float uTime;
-    uniform sampler2D uTexture;
-
-    varying vec2 vUv;
-    varying float vWave;
-
-    void main() {
-      float wave = vWave * 0.2;
-      vec3 texture = texture2D(uTexture, vUv + wave).rgb;
-      gl_FragColor = vec4(texture, 1.0); 
-    }
-  `
-);
-
-extend({ WaveShaderMaterial });
-
-const Wave = () => {
-  const ref = useRef();
-  useFrame(({ clock }) => (ref.current.uTime = clock.getElapsedTime()));
-
-  const [image] = useLoader(THREE.TextureLoader, [
-    "https://images.unsplash.com/photo-1604011092346-0b4346ed714e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80"
-  ]);
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed:60,
+      strings: ["Computer Science Major", "Database Teachers Assistant", "Web Developer", "DevOps Intern", "Software Developer Essentails Teachers Assistant"],
+    });
+  }, []);
 
   return (
-    <mesh>
-      <planeBufferGeometry args={[0.4, 0.6, 16, 16]} />
-      <waveShaderMaterial uColor={"hotpink"} ref={ref} uTexture={image} />
-    </mesh>
-  );
-};
-
-export default function Header() {
-  // useEffect(() => {
-  //   const split = new SplitText("#header-text", {
-  //     type: "lines",
-  //     linesClass: "lineChildren",
-  //   });
-
-  //   const splitParent = new SplitText("#header-text", {
-  //     type: "lines",
-  //     linesClass: "lineParent",
-  //   });
-
-  //   gsap.to(split.lines, {
-  //     duration: 2,
-  //     y: 9,
-  //     opacity: 10,
-  //     stagger: .5,
-  //     ease: "power2",
-  //   });
-  // }, []);
-
-  return (
-    <section className="header-container" data-scroll-section>
-        <Row>
-          <Col xs={10} md={7}>
-          <p class="line-1 anim-typewriter">Hello, I'm Owen</p>
-          </Col>
-          <Col xs={8} md={5}>
-            <Canvas camera={{ fov: 12, position: [0,0, 2.5] }}>
-              <Suspense fallback={null}>
-                <Wave />
-              </Suspense>
-            </Canvas>
-          </Col>
-        </Row>
-    </section>
+    <div className="intro" id="intro">
+      <div className="right">
+        <div className="wrapper">
+          <h2>Hello, I am</h2>
+          <h1>Owen Richards</h1>
+          <h3>
+            I'm a <span ref={textRef}></span>
+          </h3>
+        </div>
+      </div>
+    </div>
   );
 }

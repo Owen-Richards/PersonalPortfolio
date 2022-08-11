@@ -7218,6 +7218,11 @@
     "html-escaper" "^2.0.0"
     "istanbul-lib-report" "^3.0.0"
 
+"ityped@^1.0.3":
+  "integrity" "sha512-46Qnh3qs+6EJlWDHmvWRW6qiz5jFy2mkh9UvtTvQmLJMZIjKrdz4du68le7hLX4tAWCp6QTKiq/OuLv6huHxZg=="
+  "resolved" "https://registry.npmjs.org/ityped/-/ityped-1.0.3.tgz"
+  "version" "1.0.3"
+
 "jake@^10.8.5":
   "integrity" "sha512-sVpxYeuAhWt0OTWITwT98oyV0GsXyMlXCF+3L1SuafBVUIr/uILGRB+NqwkzhgXKvoJpDIpQvqkUALgdmQsQxw=="
   "resolved" "https://registry.npmjs.org/jake/-/jake-10.8.5.tgz"
@@ -12426,6 +12431,11 @@
   dependencies:
     "spdx-correct" "^3.0.0"
     "spdx-expression-parse" "^3.0.0"
+
+"vanta@^0.5.22":
+  "integrity" "sha512-Y58U1SjHU6HeIuwq+te7eonyi7LWzKqyPDjZyQ7Kb6Zy4ampNJHRIUZvf1Pwl6uTC6Qi6P9fUYDsUVQDHq0KKg=="
+  "resolved" "https://registry.npmjs.org/vanta/-/vanta-0.5.22.tgz"
+  "version" "0.5.22"
 
 "vary@~1.1.2":
   "integrity" "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="
