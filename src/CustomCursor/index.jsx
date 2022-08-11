@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./style.scss";
-// import CustomCursorContext from "./context/CustomCursorContext";
 
-// TODO: Hide if cursor not moved
 const CustomCursor = () => {
-  // const { type } = useContext(CustomCursorContext);
   const secondaryCursor = React.useRef(null);
   const positionRef = React.useRef({
     mouseX: 0,

@@ -1,22 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { ThemeProvider } from "./context";
-import Loadable from "react-loadable";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 import "./styles/home.scss";
 
-const loader = () => <div>Loading.</div>;
-//
-const HomeLazy = Loadable({
-  loader: () => import("../src/App"), 
-  loading: loader,
-});
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <HomeLazy />
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <App />
+  </React.StrictMode>
 );
+
+reportWebVitals();
