@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery/index";
 import Header from "./components/Header/index";
 import NavBar from "./components/Navbar/NavBar";
 import CustomCursor from "./CustomCursor/index";
+import Intro from "./components/Intro/Intro";
 
 import useLocoScroll from "./hooks/useLocoScroll";
 
@@ -71,7 +72,8 @@ const App = () => {
           ref={ref}
         >
           <NavBar />
-          {/* <Header /> */}
+          <Intro/>
+          <Header />
           {/* <Featured /> */}
           {/* <About /> */}
           {/* <Gallery /> */}
