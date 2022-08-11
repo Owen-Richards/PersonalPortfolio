@@ -7,7 +7,7 @@ import About from "./components/About/index";
 import Footer from "./components/Footer/index";
 import Gallery from "./components/Gallery/index";
 import Header from "./components/Header/index";
-import Navbar from "./components/Navbar/index";
+import NavBar from "./components/Navbar/NavBar";
 import CustomCursor from "./CustomCursor/index";
 
 import useLocoScroll from "./hooks/useLocoScroll";
@@ -70,12 +70,12 @@ const App = () => {
           data-scroll-container
           ref={ref}
         >
-          <Navbar />
-          <Header />
+          <NavBar />
+          {/* <Header /> */}
           {/* <Featured /> */}
-          <About />
+          {/* <About /> */}
           {/* <Gallery /> */}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       )}
     </>
