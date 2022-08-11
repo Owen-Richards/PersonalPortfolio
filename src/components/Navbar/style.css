@@ -15,7 +15,6 @@
     color: #fff;
     justify-self: start;
     margin-left: 20px;
-    cursor: pointer;
     font-family: Optima;
 }
 
@@ -124,7 +123,6 @@
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        cursor: pointer;
     }
 
     .fa-times {

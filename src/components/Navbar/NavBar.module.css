@@ -50,7 +50,6 @@ a {
     .NavBar .MobileNavigation .Hamburger {
         position: absolute;
         right: 5%;
-        cursor: pointer;
     }
     .NavBar nav ul {
         display: flex;

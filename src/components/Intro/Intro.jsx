@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import BIRDS from 'vanta/dist/vanta.birds.min'
 
+
 const Intro = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
   const myRef = useRef(null)

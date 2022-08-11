@@ -75,9 +75,9 @@ const App = () => {
           <Intro/>
           <Header />
           {/* <Featured /> */}
-          {/* <About /> */}
+          <About />
           {/* <Gallery /> */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       )}
     </>
