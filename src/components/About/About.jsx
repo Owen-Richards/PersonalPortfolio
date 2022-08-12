@@ -25,9 +25,9 @@ export default function About() {
 
       gsap.to(split.lines, {
         duration: 1,
-        y: -40,
+        y: 0,
         opacity: 1,
-        stagger: 0.3,
+        stagger: 0.1,
         ease: "power4.out",
       });
     }
