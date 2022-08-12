@@ -2,8 +2,6 @@ import "./Welcome.scss";
 import Typewriter from 'typewriter-effect'
 
 export default function Welcome() {
-
-
     return (
         <div className="intro" id="intro">
             <div className="right">
