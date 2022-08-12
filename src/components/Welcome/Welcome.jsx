@@ -14,7 +14,7 @@ export default function Welcome() {
                         <span>
                             <Typewriter
                                 options={{
-                                    strings: ["Computer Science Major", "Database Teachers Assistant", "Web Developer", "DevOps Intern", "Software Developer Essentails Teachers Assistant"],
+                                    strings: ["Computer Science Major", "Database Teachers Assistant", "Web Developer", "DevOps Intern", "Software Developer Essentails Teachers Assistant", "I'm driven by learning"],
                                     autoStart: true,
                                     loop: true,
                                 }}

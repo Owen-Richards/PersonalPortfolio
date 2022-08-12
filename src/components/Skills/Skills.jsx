@@ -5,6 +5,7 @@ import gsap from "gsap";
 import SplitText from "../../utils/Split3.min";
 import useOnScreen from "../../hooks/useOnScreen";
 import "./Skills.scss";
+import WordCloud from "../WordCloud/WordCloud";
 
 export default function Skills() {
   const ref = useRef(null);
@@ -22,9 +23,9 @@ export default function Skills() {
 
       gsap.to(split.lines, {
         duration: 1,
-        y: -40,
+        y: 0,
         opacity: 1,
-        stagger: 0.3,
+        stagger: 0.1,
         ease: "power4.out",
       });
     }
@@ -36,6 +37,7 @@ export default function Skills() {
       data-scroll-section
     >
       <SectionHeader title="about me" />
+      <div className="main-container">
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       Duis ut quam ac ipsum tempus finibus eu eu leo. 
@@ -54,6 +56,8 @@ export default function Skills() {
       sit amet lacus fringilla, molestie mi ac, ornare 
       lectus. Proin vehicula elit quis ornare pretium.
       </p>
+      <WordCloud/>
+      </div>
     </section>
   );
 }

@@ -7,9 +7,9 @@ const texts = [
   'React', 'C++', 'JavaScript',
   'CSS3', 'HTML', 'Python',
   'AWS', 'DataDog', 'Microsoft Azure',
-  'C', 'v2.x', 'Vanta.js', 'three.js',
+  'C', 'Vanta.js', 'three.js',
   'PHP', 'Java', 'Docker', 'Scss', 'Kupernetes',
-  'SQL', 'Linux'
+  'SQL', 'Linux',
 ];
 // const options = {
 //   radius: 250,
@@ -40,7 +40,8 @@ const WordCloud = () => {
   });
 
   return (
-      <span className="content"></span>
+    <span className='content'>
+    </span>
   )
 }
 
