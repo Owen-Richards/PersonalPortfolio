@@ -1,5 +1,7 @@
-import React from 'react'
-import BIRDS from 'vanta/dist/vanta.birds.min'
+import React from 'react';
+import BIRDS from 'vanta/dist/vanta.birds.min';
+import Welcome from '../Welcome/Welcome';
+import About from '../About/About';
 // Make sure window.THREE is defined, e.g. by including three.min.js in the document head using a <script> tag
 
 class Background extends React.Component {
@@ -31,7 +33,8 @@ class Background extends React.Component {
   }
   render() {
     return <div ref={this.vantaRef}>
-      Foreground content goes here
+      <Welcome/>
+      <About/>
     </div>
   }
 }

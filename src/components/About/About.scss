@@ -1,0 +1,26 @@
+*{
+    color:white;
+  }
+  p {
+    color: white;
+  }
+  
+  .about-section {
+    font-size: 50px;
+    p {
+      font-size: 30px;
+      line-height: 1.12;
+      opacity: 0;
+      color: white;
+  
+      > div {
+        opacity: 0;
+        transform: translateY(0px);
+        color: white;
+      }
+      &.is-reveal {
+        opacity: 1;
+        color: white;
+      }
+    }
+  }
