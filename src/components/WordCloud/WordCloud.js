@@ -40,9 +40,7 @@ const WordCloud = () => {
   });
 
   return (
-    <div className='main'>
       <span className="content"></span>
-    </div>
   )
 }
 
