@@ -40,9 +40,13 @@ export default function About() {
     >
       <SectionHeader title="about me" />
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-        Flirty Flowers is a blog about flowers and the floral designers who make them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
+        I am a BS computer science major and business engineer minor student at
+        the University of Virginia graduating in 2023. Currently located in the 
+        United States; however, interested in working anywhere since I am both a
+        citizen of the United States and United Kingdom, living in England for 15 years.
+        A strong work ethic, grit and creativity are the most important soft skills to have.
+        I placed first in England nationals for cross country, second in British schools rowing
+        championship, winning multiple state running titles.
       </p>
     </section>
   );
