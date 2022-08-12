@@ -27,7 +27,7 @@ export default function About() {
         duration: 1,
         y: -40,
         opacity: 1,
-        stagger: 0.1,
+        stagger: 0.3,
         ease: "power4.out",
       });
     }
