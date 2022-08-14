@@ -3,8 +3,6 @@ import BIRDS from 'vanta/dist/vanta.birds.min';
 import Welcome from '../Welcome/Welcome';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
-import WordCloud from '../WordCloud/WordCloud';
-// Make sure window.THREE is defined, e.g. by including three.min.js in the document head using a <script> tag
 
 class Background extends React.Component {
   constructor() {
@@ -27,7 +25,7 @@ class Background extends React.Component {
       wingSpan: 19.00,
       speedLimit: 4.00,
       separation: 36.00,
-      quantity: 5.00
+      quantity: 4.00
     })
   }
   componentWillUnmount() {
@@ -37,7 +35,7 @@ class Background extends React.Component {
     return <div ref={this.vantaRef}>
       <Welcome/>
       <About/>
-      <WordCloud/>
+      <Skills/>
     </div>
   }
 }
