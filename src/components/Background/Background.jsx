@@ -3,6 +3,7 @@ import BIRDS from 'vanta/dist/vanta.birds.min';
 import Welcome from '../Welcome/Welcome';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
+import Project from '../Projects/Project';
 
 class Background extends React.Component {
   constructor() {
@@ -15,7 +16,7 @@ class Background extends React.Component {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 700.00,
+      minHeight: 1200.00,
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
@@ -36,6 +37,7 @@ class Background extends React.Component {
       <Welcome/>
       <About/>
       <Skills/>
+      <Project/>
     </div>
   }
 }

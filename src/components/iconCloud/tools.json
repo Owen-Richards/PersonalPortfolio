@@ -1,6 +1,7 @@
 [
     {
       "name": "node js",
+      "key": "node js",
       "icon": "https://cdn.svgporn.com/logos/nodejs-icon.svg?response-content-disposition=attachment%3Bfilename%3Dnodejs-icon.svg",
       "link": "www.google.com"
     },
@@ -175,23 +176,103 @@
       "link": "www.google.com"
     },
     {
-      "name": "AWS ECS",
-      "icon": "https://cdn.svgporn.com/logos/aws-ecs.svg?response-content-disposition=attachment%3Bfilename%3Daws-ecs.svg",
+      "name": "Homebrew",
+      "icon": "https://cdn.svgporn.com/logos/homebrew.svg?response-content-disposition=attachment%3Bfilename%3Dhomebrew.svg",
       "link": "www.google.com"
     },
     {
-      "name": "AWS ECS",
-      "icon": "https://cdn.svgporn.com/logos/aws-ecs.svg?response-content-disposition=attachment%3Bfilename%3Daws-ecs.svg",
+      "name": "C++",
+      "icon": "https://cdn.svgporn.com/logos/c-plusplus.svg?response-content-disposition=attachment%3Bfilename%3Dc-plusplus.svg",
       "link": "www.google.com"
     },
     {
-      "name": "AWS ECS",
-      "icon": "https://cdn.svgporn.com/logos/aws-ecs.svg?response-content-disposition=attachment%3Bfilename%3Daws-ecs.svg",
+      "name": "C#",
+      "icon": "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg",
       "link": "www.google.com"
     },
     {
-      "name": "AWS ECS",
-      "icon": "https://cdn.svgporn.com/logos/aws-ecs.svg?response-content-disposition=attachment%3Bfilename%3Daws-ecs.svg",
+      "name": "MySQL",
+      "icon": "https://cdn.svgporn.com/logos/mysql.svg?response-content-disposition=attachment%3Bfilename%3Dmysql.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Postman",
+      "icon": "https://cdn.svgporn.com/logos/postman.svg?response-content-disposition=attachment%3Bfilename%3Dpostman.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Atom",
+      "icon": "https://cdn.svgporn.com/logos/atom-icon.svg?response-content-disposition=attachment%3Bfilename%3Datom-icon.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Django",
+      "icon": "https://cdn.svgporn.com/logos/django.svg?response-content-disposition=attachment%3Bfilename%3Ddjango.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "VScode",
+      "icon": "https://cdn.svgporn.com/logos/visual-studio-code.svg?response-content-disposition=attachment%3Bfilename%3Dvisual-studio-code.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Atlaissian",
+      "icon": "https://cdn.svgporn.com/logos/atlassian.svg?response-content-disposition=attachment%3Bfilename%3Datlassian.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Jira",
+      "icon": "https://cdn.svgporn.com/logos/jira.svg?response-content-disposition=attachment%3Bfilename%3Djira.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "C",
+      "icon": "https://cdn.svgporn.com/logos/c.svg?response-content-disposition=attachment%3Bfilename%3Dc.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "React",
+      "icon": "https://cdn.svgporn.com/logos/react.svg?response-content-disposition=attachment%3Bfilename%3Dreact.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Eclipse",
+      "icon": "https://cdn.svgporn.com/logos/eclipse.svg?response-content-disposition=attachment%3Bfilename%3Declipse.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Postgres",
+      "icon": "https://cdn.svgporn.com/logos/postgresql.svg?response-content-disposition=attachment%3Bfilename%3Dpostgresql.svgg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Github",
+      "icon": "https://cdn.svgporn.com/logos/github-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgithub-icon.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "PHP",
+      "icon": "https://cdn.svgporn.com/logos/php.svg?response-content-disposition=attachment%3Bfilename%3Dphp.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Python",
+      "icon": "https://cdn.svgporn.com/logos/python.svg?response-content-disposition=attachment%3Bfilename%3Dpython.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Jquery",
+      "icon": "https://cdn.svgporn.com/logos/jquery.svg?response-content-disposition=attachment%3Bfilename%3Djquery.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Java",
+      "icon": "https://cdn.svgporn.com/logos/java.svg?response-content-disposition=attachment%3Bfilename%3Djava.svg",
+      "link": "www.google.com"
+    },
+    {
+      "name": "Linux",
+      "icon": "https://cdn.svgporn.com/logos/linux-tux.svg?response-content-disposition=attachment%3Bfilename%3Dlinux-tux.svg",
       "link": "www.google.com"
     }
   ]
