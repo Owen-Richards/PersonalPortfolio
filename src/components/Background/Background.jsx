@@ -7,6 +7,8 @@ import Project from '../Projects/Project';
 import Accomplishments from '../Accomplishments/accomplishments';
 import Experience from '../Experience/Experience';
 import Contact from '../Contact/Contact';
+import NavBar from '../Navbar/NavBar';
+import "./background.css";
 
 class Background extends React.Component {
   constructor() {
@@ -19,17 +21,17 @@ class Background extends React.Component {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 800.00,
+      minHeight: 10.00,
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
       backgroundColor: 0x181818,
       colorMode: "variance",
-      birdSize: 1.20,
+      birdSize: .30,
       wingSpan: 19.00,
       speedLimit: 4.00,
       separation: 36.00,
-      quantity: 4.00
+      quantity: 6.00
     })
   }
   componentWillUnmount() {
@@ -37,13 +39,52 @@ class Background extends React.Component {
   }
   render() {
     return <div ref={this.vantaRef}>
-      <Welcome/>
-      <About/>
-      <Skills/>
-      <Project/>
-      <Experience/>
-      <Accomplishments/>
-      <Contact/>
+      <NavBar />
+      <section id="home">
+        <Welcome />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="about">
+        <About />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="skill">
+        <Skills />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="project">
+        <Project />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="experience">
+        <Experience />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="achievements">
+        <Accomplishments />
+      </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   }
 }

@@ -105,6 +105,7 @@
 
 .accomplish-section {
     font-size: 40px;
+	padding: 0;
 }
 
 @media (max-width: 700px) {

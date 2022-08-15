@@ -18,7 +18,7 @@ export default function IconCloud() {
       <Cloud>
         {tools.map((item) => (
           <A key={item.name} title={item.name}>
-            <Img src={item.icon} width="64" height="64" />
+            <Img src={item.icon} width="70" height="70" />
           </A>
         ))}
       </Cloud>

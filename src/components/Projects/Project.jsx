@@ -33,7 +33,7 @@ export default function Project() {
 
     return (
         <section
-            className={cn("about-section", { "is-reveal": reveal })}
+            className={cn("project-section", { "is-reveal": reveal })}
             data-scroll-section
         >
             <SectionHeader title="Projects" />

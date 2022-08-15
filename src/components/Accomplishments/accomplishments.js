@@ -5,7 +5,6 @@ import "./accomplishments.css";
 
 export default function Accomplishments() {
     return (
-
         <section
             className={cn("accomplish-section")}
         >

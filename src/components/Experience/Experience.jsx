@@ -33,20 +33,20 @@ export default function Experience() {
 
   return (
     <section
-      className={cn("about-section", { "is-reveal": reveal })}
+      className={cn("experience-section", { "is-reveal": reveal })}
       data-scroll-section
     >
       <SectionHeader title="Experience" />
       <div className="about-info">
-          <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-            I am a BS computer science major and business engineer minor student at
-            the University of Virginia graduating in 2023. Currently located in the
-            United States; however, interested in working anywhere since I am both a
-            citizen of the United States and United Kingdom, living in England for 15 years.
-            A strong work ethic, grit and creativity are the most important soft skills to have.
-            I placed first in England nationals for cross country, second in British schools rowing
-            championship, winning multiple state running titles.
-          </p>
+        <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
+          I am a BS computer science major and business engineer minor student at
+          the University of Virginia graduating in 2023. Currently located in the
+          United States; however, interested in working anywhere since I am both a
+          citizen of the United States and United Kingdom, living in England for 15 years.
+          A strong work ethic, grit and creativity are the most important soft skills to have.
+          I placed first in England nationals for cross country, second in British schools rowing
+          championship, winning multiple state running titles.
+        </p>
       </div>
     </section>
   );

@@ -6,15 +6,18 @@
 .skill-section {
   width: 100%;
   font-size: 40px;
+  font-family: Optima;
+  padding: 0;
 
   .skill-container {
-    display: flex;
     margin: auto;
     width: 95%;
   }
   
 
   p {
+    align-items: center;
+    justify-content: center;
     line-height: 1.12;
     font-size: 25px;
     opacity: 0;
