@@ -1,0 +1,43 @@
+* {
+    color: white;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  .about-info{
+    width: 95%;
+    margin: auto;
+  }
+  .about-section {
+    font-size: 40px;
+  
+    p {
+      line-height: 1.12;
+      font-size: 40px;
+      opacity: 0;
+      color: white;
+  
+      div {
+        opacity: 0;
+        transform: translateY(0px);
+        color: white;
+      }
+  
+      &.is-reveal {
+        opacity: 1;
+        color: white;
+      }
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .about-section {
+      font-size: 30px;
+      p {
+        font-size: 25px;
+        line-height: 1.12;
+      }
+    }
+  }

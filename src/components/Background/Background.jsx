@@ -4,6 +4,9 @@ import Welcome from '../Welcome/Welcome';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Project from '../Projects/Project';
+import Accomplishments from '../Accomplishments/accomplishments';
+import Experience from '../Experience/Experience';
+import Contact from '../Contact/Contact';
 
 class Background extends React.Component {
   constructor() {
@@ -16,7 +19,7 @@ class Background extends React.Component {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 1200.00,
+      minHeight: 800.00,
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
@@ -38,6 +41,9 @@ class Background extends React.Component {
       <About/>
       <Skills/>
       <Project/>
+      <Experience/>
+      <Accomplishments/>
+      <Contact/>
     </div>
   }
 }
