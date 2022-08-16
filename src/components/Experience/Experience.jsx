@@ -38,15 +38,62 @@ export default function Experience() {
     >
       <SectionHeader title="Experience" />
       <div className="about-info">
-        <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-          I am a BS computer science major and business engineer minor student at
-          the University of Virginia graduating in 2023. Currently located in the
-          United States; however, interested in working anywhere since I am both a
-          citizen of the United States and United Kingdom, living in England for 15 years.
-          A strong work ethic, grit and creativity are the most important soft skills to have.
-          I placed first in England nationals for cross country, second in British schools rowing
-          championship, winning multiple state running titles.
-        </p>
+        <div className="work-experience">
+          <h2>DevOps Intern, nCino, May 2022 - Sepember 2022</h2>
+          <div className="duties">
+            <li> Worked on the DevOps team for the cloud banking company nCino.
+              In this internship I worked with product design engineers to indtroduce
+              tools and processes into the software development life cycle to produce
+              better software.
+            </li>
+            <li> Though the internship I also helped maintain and update their appliciations.
+              One improvement I made was update all their repositorys in AWS CDK v2 to better use the
+              AWS Cloud Development Kit framework.
+            </li>
+            <li> Went through all the repositories and resolved any bandit security threats
+              withing the infrastructure.
+            </li>
+            <li> The internship heavily utilized AWS, Datadog, and python. I created a AWS lambda function
+              to handle errors that occur within the code build. I also made a lambda function which used the
+              slack API to notify the DevOps team of any errors and provide the execution ID for better ease.
+            </li>
+            <li>
+              Helped resolve deployment pipeline issues of application.
+            </li>
+            <li>
+              Created a new repository for a Product Design team and integrated it with salesforce.
+            </li>
+            <li>
+              Included readme.com CLI commands within the codebuild deplyment pipeline for appliciations
+              so that changes or new api and markdown files are added to the developer portal. This helps consolidate
+              information for developers to one place.
+            </li>
+          </div>
+        </div>
+        <div className="work-experience">
+          <h2>Programming Languages for Web Development Teachers Assistant, Universiry of Virginia, March 2022 - June 2022</h2>
+          <div className="duties">
+            <li> I was the only teachers assistant for Professor Praphamontripong in the Programming Languages for Web Development course.
+              The course teaches students a variety of languages that are used in web development along with best practices and UI design.
+            </li>
+            <li> Some of the languages covered in the course is JavaScript, HTML, CSS, PHP, SQL, SCSS, JSON, XML, LESS, SASS, Markdown, 
+            Perl, Ruby, Go, NodeJS. Additionally, students learn about React and Angular and use these in their project.
+            </li>
+            <li> My duties of the course was to grade all of the students assignments including weekly activities, homeowrk, exams, quizzes
+              and the final project. In addition to this I hosted 10 hours of office hours a week where I would help students refine their
+              knowledge on these languages, help them with their project and homework assignments if assistance is needed.
+            </li>
+            <li> The course required a high level of efficency in all the languages to be able to help and teach students about any gaps in
+              their knowledge. The final project was a semester long assignment where students were tasked to create a fully functional web
+              application where they used PHP and SQL to handle the backend data using a relational database. Also, the frontend must have JavaScript,
+              HTML, CSS along with being able to handle JSON data. Finally, there must be a Angular component to the application. There were 
+              additional requirements such as a responsive design, UI, GET/POST and other tasks to the assignment.
+            </li>
+            <li> Thoughout the process, I learnt skills of simplifying and communicating concepts to help students better learn. 
+              Also, I worked with the professor to refine the final exam to accurately test the students knowledge.
+            </li>
+          </div>
+        </div>
       </div>
     </section>
   );

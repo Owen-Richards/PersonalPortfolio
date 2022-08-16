@@ -31,7 +31,7 @@ class Background extends React.Component {
       wingSpan: 19.00,
       speedLimit: 4.00,
       separation: 36.00,
-      quantity: 6.00
+      quantity: 4.00
     })
   }
   componentWillUnmount() {
