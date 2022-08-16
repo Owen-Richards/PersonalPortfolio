@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import NavBar from "./components/Navbar/NavBar";
 import Loader from "./components/Loader/loader";
 import Background from "./components/Background/Background";
 import CustomCursor from "./CustomCursor/index";
@@ -27,7 +26,6 @@ const App = () => {
           id="main-container"
           data-scroll-container
         >
-          <NavBar />
           <Background/>
         </div>
       )}

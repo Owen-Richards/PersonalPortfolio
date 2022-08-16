@@ -6,18 +6,37 @@ p {
   color: white;
 }
 
-.about-info{
+h2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #D5BFF2;
+  font-family: Optima;
+}
+
+.duties{
+  width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+}
+li {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Optima;
+
+}
+
+.about-info {
   width: 95%;
   margin: auto;
 }
+
 .about-section {
   font-size: 40px;
   padding: 0;
 
   p {
-    font-family: Optima;
     line-height: 1.12;
-    font-size: 25px;
+    font-size: 40px;
     opacity: 0;
     color: white;
 
@@ -34,11 +53,17 @@ p {
   }
 }
 
+
+.experience-section {
+  font-size: 40px;
+  padding: 0;
+}
+
 @media (max-width: 700px) {
-  .about-section {
+  .experience-section {
     font-size: 30px;
     p {
-      font-size: 15px;
+      font-size: 25px;
       line-height: 1.12;
     }
   }
