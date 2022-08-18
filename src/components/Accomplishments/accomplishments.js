@@ -1,5 +1,4 @@
 import React from "react";
-import cn from "classnames";
 import SectionHeader from "../SectionHeader";
 import "./accomplishments.css";
 
