@@ -38,6 +38,56 @@ export default function Experience() {
     >
       <SectionHeader title="Experience" />
       <div className="about-info">
+      <div className="work-experience">
+          <h2>Software Development Essentials Teachers Assistant, University of Virginia, August 2022 - December 2022</h2>
+          <div className="duties">
+            <li> The course covers introductory topics in testing, 
+              software design principles, design patterns, 
+              functional programming, and data storage and manipulation.
+            </li>
+            <li> The technologies used in this position are Java, IntelliJ, git, gradle, 
+              JavaFX Scenebuilder, SQLite3 and SQLite Studio. As a teachers assistant, I 
+              am expected to have a in-depth knowledge of these tools so that I can help 
+              students learn these softwares.
+            </li>
+            <li> The course builds on fundamental knowledge such as variables, functions, conditionals and loops. 
+              Along with this, students are expects to come in understanding object oriented programming, polymorphism, 
+              and common data structure with emphasis on ArrayList, HashMap, HashSet and TreeSet.
+            </li>
+            <li>
+              This position has strengthened my knowlegde in these fundamental topics and aided me in 
+              learning how to simple present new knowledge that is understandable to students of all levels.
+            </li>
+            <li>
+              Being a TA for this SDE course strengthed my foundational knowledge.
+            </li>
+          </div>
+        </div>
+        <div className="work-experience">
+          <h2>Database Systems Teachers Assistant, University of Virginia, August 2022 - December 2022</h2>
+          <div className="duties">
+            <li> The course focuses on five main concepts: Database Design, Query Languages, 
+              Database System Implementation, Database Interfacing, Database Types.
+            </li>
+            <li>
+              Databases are the heart of any data-driven software application. By being a 
+              TA for this course I have reinforced my knowledge on database systems to understand 
+              best design and implimentation practices when building these apps.
+            </li>
+            <li>
+              The course also teaches students in students PHP, HTML, CSS and SQL. Additionally, 
+              as a TA, I am expected to know google cloud to help students host websites on the google cloud. 
+              This is on top of the concepts that are taught though the course.
+            </li>
+            <li>
+              The course has a semester long project where students are expected to design and 
+              impliment a database in a webapp or software that they create. The students are in cohorts of 
+              3-5 students. In my role I oversee the teams and check up on their progress along with having office hours 
+              where I help them in areas of trouble. The course taught me the skills of management and overseeing projects 
+              as I kept track of multiple teams progress at once.
+            </li>
+          </div>
+        </div>
         <div className="work-experience">
           <h2>DevOps Intern, nCino, May 2022 - Sepember 2022</h2>
           <div className="duties">
@@ -91,6 +141,66 @@ export default function Experience() {
             </li>
             <li> Thoughout the process, I learnt skills of simplifying and communicating concepts to help students better learn. 
               Also, I worked with the professor to refine the final exam to accurately test the students knowledge.
+            </li>
+          </div>
+        </div>
+        <div className="work-experience">
+          <h2>Cloud-based Patient Outcome Platform Research Assistant, University of Virginia, December 2021 - May 2022</h2>
+          <div className="duties">
+            <li> 
+              The research position was within the Pervasive Communications Labortory at the University of Virginia. 
+              The research was a part of a NIH grant proposal being made in partnership with Emory and Harvard Univesity.
+              UVA's role in the CPOP project was consisting with API and data services. I worked in a 
+              team of UVA graduate students and reported to a masters student, Zhengkun Xiao.
+            </li>
+            <li>
+              My first assignment was using npm, Javasript, HTML and CSS to create the UI for the patient survey. 
+              The survey was for patients to feel in data for doctors to refernece. The information requested was 
+              on generic health questions such as gender, weight, pre-existing conditions, current medication, etc.
+            </li>
+            <li>
+              After this assignment where I purposed for survey UI, I then began research in web, application, database and storage 
+              layers with cloud computing. The solution design for CPOP is based on the AWS reference achitecture for sensitive data 
+              that that makes use of secured services using user-scoped IAM permissions and auditable logging and configuration 
+              compliance controls.
+            </li>
+            <li>
+              In the project I used Amazon Cognito for authentication and authorization, Amazon S3 / CloudFront 
+              services for the web application layer, Amazon API Gateway / Lambda for the application layer, and 
+              DynamoDB database services for that data layer.
+            </li>
+            <li>
+              The project gave me experience using AWS and learning cloud computing concepts.
+            </li>
+          </div>
+        </div>
+        <div className="work-experience">
+          <h2>Deep Learning Research Assistant, University of Virginia, August 2021 - December 2022</h2>
+          <div className="duties">
+            <li> 
+              Worked in the Pervasive Communications Labortory under Prfessor Shen. The 
+              research Labortory research interests include Cloud computing, dataceneters, 
+              big data, cyper-physical systems, distributed systems, mobile computing, high performace computing, 
+              and socail netwroks.
+            </li>
+            <li>
+              My research was preformed under PhD student Suraiya Tairin. The research 
+              required a deep knowledge on python, deep learning models, using GPU and 
+              knowing how to use virtual environments.
+            </li>
+            <li>
+              My first assignment to use both python and know how to run deep learning models 
+              was to create deep learning code that takes in images of different flora species 
+              and identifies what family they belong to. This project taught me machine learning 
+              and machine learning libraries that are imported in python. One library in 
+              particular I used was NumPy. 
+            </li>
+            <li>
+              Following the project I accessed the schools GPU services to run deep learning 
+              algorithms to study data parallelism and deep learning. Data parallelism splits up large 
+              batasets into smaller batches. Each of the smaller batches are calculate on muliple GPU 
+              servers then a result is found from these outputs. This is a immensely faster way to 
+              run deep learning algorithms. 
             </li>
           </div>
         </div>
