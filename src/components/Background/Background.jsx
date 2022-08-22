@@ -1,12 +1,12 @@
 import React from 'react';
 import BIRDS from 'vanta/dist/vanta.birds.min';
 import Welcome from '../Welcome/Welcome';
-import About from '../About/About';
-import Skills from '../Skills/Skills';
-import Project from '../Projects/Project';
-import Accomplishments from '../Accomplishments/accomplishments';
-import Experience from '../Experience/Experience';
-import Contact from '../Contact/Contact';
+// import About from '../About/About';
+// import Skills from '../Skills/Skills';
+// import Project from '../Projects/Project';
+// import Accomplishments from '../Accomplishments/accomplishments';
+// import Experience from '../Experience/Experience';
+// import Contact from '../Contact/Contact';
 import NavBar from '../Navbar/NavBar';
 import "./background.css";
 
@@ -27,7 +27,7 @@ class Background extends React.Component {
       scaleMobile: 1.00,
       backgroundColor: 0x181818,
       colorMode: "variance",
-      birdSize: .30,
+      birdSize: 1.30,
       wingSpan: 19.00,
       speedLimit: 4.00,
       separation: 36.00,
@@ -42,48 +42,6 @@ class Background extends React.Component {
       <NavBar />
       <section id="home">
         <Welcome />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="about">
-        <About />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="skill">
-        <Skills />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="project">
-        <Project />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="experience">
-        <Experience />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="achievements">
-        <Accomplishments />
-      </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <section id="contact">
-        <Contact />
       </section>
     </div>
   }
