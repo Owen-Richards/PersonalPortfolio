@@ -1,3 +1,21 @@
+# Owen Richards Personal Porfolio
+
+## Why?
+
+I started this project it connect with more people looking to connect either 
+with potential project ideas to work on or job opportunities out of university. 
+This project also forced me to learn new technologies, how to deploy a website and 
+improve my abilities. The project refined my web development skills and will be useful 
+in being a teachers assistant for courses.
+
+## Technologies
+
+This project had a plethora of technologies. Some of the technologies used in this project was:
+JavaScript, HTML, CSS, JavaScript XML, Vanta.js, GSAP, SCSS, Framer-motion, react animations, Netlify (for deploying),
+GoDaddy (domain name). Through doing this project I also learnt other technologies that we implimented in previous versions 
+such as three.js. However, not all the technologies learnt in the project are illistrated in the **current** final project due 
+to a various of reasons, one being webstie latency because of CPU power
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
